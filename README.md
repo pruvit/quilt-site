@@ -7,7 +7,7 @@
 [![License][license-image]][license-url]
 [![Code Style][code-style-image]][code-style-url]
 
-> Custom interfaces ("quilts") made of all of your favorite apps ("patches")
+> Custom interfaces (*quilts*) made of all of your favorite apps (*patches*)
 
 ## Table of Contents
 1. [Requirements](#requirements)
@@ -19,14 +19,13 @@
 1. [Deployment](#deployment)
 
 ## Requirements
-* node `^5.0.0` (`6.11.0` suggested)
-* yarn `^0.23.0` or npm `^3.0.0`
+* node `^5.0.0` (`8.6.0` suggested)
 
 ## Getting Started
 
 1. Install dependencies: `npm install`
-
-2. Start Development server: `npm start`
+2.
+3. Start Development server: `npm start`
 
 While developing, you will probably rely mostly on `npm start`; however, there are additional scripts at your disposal:
 
