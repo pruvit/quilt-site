@@ -5,6 +5,9 @@ import { Provider } from 'react-redux'
 import Notifications from 'containers/Notifications'
 import Theme from 'theme'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+
+injectTapEventPlugin()
 
 export default class AppContainer extends PureComponent {
   static childContextTypes = {

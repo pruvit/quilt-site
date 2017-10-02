@@ -1,6 +1,6 @@
 import { LOGIN_PATH as path } from 'constants'
 
-export default store => ({
+export default () => ({
   path,
   /*  Async getComponent is only invoked when route matches   */
   getComponent(nextState, cb) {
@@ -11,7 +11,7 @@ export default store => ({
       require => {
         /*  Webpack - use require callback to define
           dependencies for bundling   */
-        const Login = require('./containers/LoginContainer').default
+        const Login = require('./components/LoginPage').default
 
         /*  Return getComponent   */
         cb(null, Login)

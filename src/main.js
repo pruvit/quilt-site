@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import createStore from './store/createStore'
 import { version } from '../package.json'
 import { env } from './config'
-import injectTapEventPlugin from 'react-tap-event-plugin'
 
 import './styles/core.scss'
 
@@ -26,7 +25,7 @@ const MOUNT_NODE = document.getElementById('root')
 let render = () => {
   const App = require('./containers/App').default
   const routes = require('./routes/index').default(store)
-  injectTapEventPlugin()
+
   ReactDOM.render(<App store={store} routes={routes} />, MOUNT_NODE)
 }
 

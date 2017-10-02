@@ -7,6 +7,11 @@ export const withStore = compose(
   getContext({ store: PropTypes.object }),
 )
 
+export const withRouter = compose(
+  withContext({ router: PropTypes.object }, () => {}),
+  getContext({ router: PropTypes.object })
+)
+
 export const withNotifications = compose(
   withStore,
   withHandlers({
